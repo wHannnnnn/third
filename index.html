@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    var arr=new Array(1,2,3,4,5)
+//    //    console.log(arr instanceof  Array);
+//    //    console.log(Array.isArray(arr))
+    //push 将元素添加到末尾   //unshift 将元素添加到开头
+//    var array=[3,5,78,9]
+//    var result=array.unshift(4,3,5466,2)
+//    console.log(array)
+
+
+    //pop 删除最后一个元素 并返回这个元素 //shift 删除第一个元素
+//var array=[3,5,78,9]
+//    var result=array.pop()
+//    console.log(result)
+
+    //shift 删除第一个元素 并返回它的值
+//var array=[3,5,78,9]
+//    var result=array.shift()
+//    console.log(array)
+//    console.log(result)
+//var array=[3,5,78,9]
+//    var result=array.unshift(3,3,5,5)
+// console.log(array)
+
+
+    //reverse 翻转数组
+//var array=[3,5,78,9]
+//    console.log(array.reverse())
+
+//转成字符串
+// var array=[3,5,78,9]
+//    console.log(array.toString())
+
+//var array=[3,5,78,9]
+//
+//    var result=array.join("|")
+//    console.log(result)
+
+//indexOf  数组元素返回的索引
+//var array=[3,5,78,9]
+//    var result=array.indexOf(5)
+//    console.log(result) //输出为1
+
+////filter
+//var array=[3,5,78,9]
+//function fil(value){
+//    return value>5
+//}
+//    var newarr=array.filter(fil)
+//    console.log(newarr)
+
+//var array=[3,5,78,9]
+//    function compare(a,b){
+//        return b-a
+//    }
+//    var result= array.sort(compare)
+//var array = [20,40,12,60,34];
+//
+//var result =  array.sort();
+//    console.log(result)  //默认从小到大
+//将一个字符串数组输出为|分割的形式，比如“刘备|张飞|关羽”。使用两种方式实现
+//var array = ['刘备','张飞','关羽'];
+////var str=array[0];
+////    for(var i=1;i<array.length;i++){
+////        str=str+"|"+array[i]
+////    }
+////    console.log(str)
+//
+//var  array1=array.join("|")
+//
+//console.log(array1);
+//将一个字符串数组的元素的顺序进行反转
+//var array = ["a", "b", "c", "d"];
+//var newarr=[]
+//    for(var i=array.length-1;i>=0;i--){
+//        newarr[newarr.length]=array[i]
+//
+//    }
+//
+//    console.log(newarr)
+
+//
+//var array = ["a", "b", "c", "d"];
+//    for(var i=0;i<array.length-1;i++){
+//        for(var j=0;j<array.length-1-i;j++){
+//            if(array[j]<array[j+1]){
+//                var temp=array[j+1]
+//                array[j+1]=array[j]
+//                array[j]=temp
+//            }
+//        }
+//    }
+//console.log(array);
+//var array = ["a", "b", "c", "d"];
+//    var result=array.reverse()
+//    console.log(array)
+//工资的数组[1500, 1200, 2000, 2100, 1800],把工资超过2000的删除
+//var array =[1500, 1200, 2000, 2100, 1800];
+//var newarray=[]
+////    function fil(item){
+////       return item<=2000
+////    }
+////    var result=array.filter(fil)
+////    console.log(result)
+//for(var i= 0;i<array.length;i++){
+//    if(array[i]<=2000){
+//       newarray[newarray.length]=array[i]
+//    }
+//
+//}
+//console.log(newarray)
+
+
+// 创建一个方法,获取每个元素在数组中出现的次数
+// var arr = ['c', 'a', 'c', 'a', 'x', 'a'];
+//var newarr=[]
+//for(var i=0;i<arr.length;i++){
+//    if(newarr[arr[i]]){
+//        newarr[arr[i]]++
+//    }else{
+//        newarr[arr[i]]=1
+//    }
+//}
+//console.log(newarr)
+//
+//
+//
+//// 编写一个方法去掉一个数组的重复元素['c', 'a', 'z', 'a', 'x', 'a']
+//var arr = ['c', 'a', 'c', 'a', 'x', 'a'];
+//    var newarr=[]
+//    for(var i=0;i<arr.length;i++){
+//        if(newarr[arr[i]]){
+//            newarr[arr[i]]++
+//        }else{
+//            newarr[arr[i]]=1
+//        }
+//    }
+//console.log(newarr)
+
+//    var newarr1=[]
+//    for(var key in newarr){
+//       newarr1.push(key)
+//    }
+//    console.log(newarr1)
+
+//function max(arr){
+//    var maxNumber=[0];
+//    for(var i=1;i<arr.length;i++){
+//        if(maxNumber<arr[i]){
+//            maxNumber=arr[i]
+//        }
+//    }
+//    return maxNumber
+//}
+//console.log(max([1,9,3,7,5]));
+
+
+//var str="";
+//    for(var i=1;i<=9;i++){
+//        for(var j=i;j<=9;j++){
+//            str=str+i+"*"+j+"="+i*j+"\t"
+//        }
+//        str+="\n"
+//    }
+//    console.log(str)
+
+
+
+//
+//
+//
+//function maopao(arr){
+//    for(var i=0;i<arr.length-1;i++){
+//        for(var j=0;j<arr.length-1-i;j++){
+//            if(arr[j]<arr[j+1]){
+//                var temp=arr[j+1];
+//                arr[j+1]=arr[j]
+//                arr[j]=temp
+//            }
+//        }
+//    }
+//    return arr
+//}
+//    console.log(maopao([3,4,5,6,7]))
+
+
+
+
+
+//
+//
+//
+//    function max(n){
+//       var arr = [1,9,3,7,5]
+//
+//
+//        for(var i=0;i<arr.length;i++){
+//            if(n<arr[i]){
+//                n=arr[i]
+//            }
+//        }
+//    }
+//
+
+
+//编写一个函数，将如下字符串'get-element-by-id'修改为驼峰表示法'getElementById'
+//var str='get-element-by-id'
+//var arr=str.split("")  //split("")字符串变成数组
+//
+//var newarr=[]
+//for(var i=0;i<arr.length;i++) {
+//    if (arr[i] == '-') {
+//        arr[i]="";
+//        arr[i+1] = arr[i + 1].toLocaleUpperCase()
+//
+//    }
+//
+//
+//    if (arr[i] != '-') {
+//        newarr[newarr.length] = arr[i]
+//    }
+//
+//}
+//    console.log(newarr.join(''))
+
+//var date=new Date()
+////console.log(date)= console.log(date.toDateString()) +console.log(date.toTimeString());
+//
+////console.log(date.valueOf()) //毫秒
+//  //日期字符串
+//
+//console.log(date.getMonth()+1);// getMonth要+1
+
+//function adate(date){
+//    if(!(date instanceof Date)){
+//        console.log("nonono")
+//    }
+//
+//    var year=date.getFullYear();
+//    var month=date.getMonth();
+//    var days=date.getDate();
+//    var hours=date.getHours();
+//    var seconds=date.getSeconds()
+//    var minutes=date.getMinutes();
+//   month=month>9? month: "0"+month;
+//    days=days>9? days: "0"+days;
+//    hours=hours>9? hours: "0"+hours;
+//    seconds=seconds>9? seconds: "0"+seconds;
+//    minutes=minutes>9? minutes: "0"+minutes;
+//    date=year+"-"+month+"-"+days+" "+" "+hours+":"+seconds+":"+minutes
+//   return date
+//}
+//    var date=new Date()
+//var result=adate(date)
+//    console.log(result)
+
+//
+//    var arr=[3,22,4,36,55]
+//    function zzz(a,b){
+//      return b-a
+//    }
+//    arr=arr.sort(zzz)
+//    console.log(arr)
+
+//var person={
+//        name:"哈哈",
+//        year:18,
+//        sex:"男",
+//        hobby:"女",
+//        strong:function(){
+//            console.log("游戏")
+//        },
+//        strong2:function(){
+//            console.log("睡觉")
+//        },
+//        strong3:function(){
+//            console.log("嘿嘿")
+//        }
+//    }
+//    for(var key in person){
+//        console.log(key+":"+person[key])
+//    }
+//var str = 'helloworld';
+//
+////console.log(str.charAt(2)); //提取字符串的字节并返回字符
+//console.log(str.charAt(2).toUpperCase())
+//var arr=[3,22,4,36,55]
+//   var result= arr.join("z")
+//    console.log(result)
+
+</script>
+</body>
+</html>
